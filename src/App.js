@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Cards from './components/Cards'
 import Search from './components/Search'
 
-function App(props) {
+function App() {
   const [cards, setCards] = useState([])
 
   const addNewCard = cardInfo => {
@@ -11,7 +11,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <Search onsubmit={addNewCard} />
+      <Search onSubmit={addNewCard} />
       <Cards cards={cards} />
     </div>
   );
